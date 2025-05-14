@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;  
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body{
@@ -17,11 +18,12 @@ body{
 .container{
     width: 420px;
     background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, .2);
+    border: 2px solid rgba(255, 255, 255, .3);
     border-radius: 10px;
     color: white;
     padding: 30px 40px;
-    box-shadow: 0 0 10px rgba(0,0,0, .2);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    backdrop-filter: blur(3px);
 }
    
 .container h1{
@@ -29,8 +31,91 @@ body{
     text-align: center;
 }
 
-.input-box{
+.input-box {
     position: relative;
     width: 100%;
     height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .3);;
+    border-radius: 40px ;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: rgb(221, 218, 218);
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+    color: #ffffffa2;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.login{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 25px;
+}
+
+.login:hover{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .3);
+    color: #fff;
+    transition: 0.6s;
+}
+
+.register-link {
+    color: #ffffff9f;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 17px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.register-link a:hover {
+    text-decoration: underline;
 }
